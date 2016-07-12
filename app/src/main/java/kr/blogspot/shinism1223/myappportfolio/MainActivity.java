@@ -13,59 +13,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onButton1Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my popular movies app!";
-        int duration = Toast.LENGTH_SHORT;
 
+    private void showToastMessage(String text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
 
+    public void onButton1Clicked(View v) {
+        showToastMessage("This Button will launch my popular movies app!");
     }
     public void onButton2Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my stock hawk app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
+        showToastMessage("This Button will launch my stock hawk app!");
     }
     public void onButton3Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my build it bigger app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
+        showToastMessage("This Button will launch my build it bigger app!");
     }
     public void onButton4Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my make your app material app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
+        showToastMessage("This Button will launch my make your app material app!");
     }
-
     public void onButton5Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my go ubiquitous app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
+        showToastMessage("This Button will launch my go ubiquitous app!");
     }
     public void onButton6Clicked(View v) {
-        Context context = getApplicationContext();
-        CharSequence text = "This Button will launch my capstone app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        showToastMessage("This Button will launch my capstone app!");
     }
 
 
